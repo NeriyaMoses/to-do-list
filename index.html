@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>To-do list</title>
-    <link rel="icon" type="image/x-icon" href="/Images/favicon.ico">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>To-do list</title>
+  <link rel="icon" type="image/x-icon" href="Images/favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <header style="background-color: rgb(59, 105, 255); color: white; padding: 1px; text-align: center;">
-        <h1>To-Do List</h1>
+  <div class="wrapper">
+    <header class="header">
+      <h1>To-Do List</h1>
     </header>
 
-    <input type="text" id="taskInput" placeholder="Add a new task..." />
-    <button id="addTaskBtn">Add Task</button>
+    <main class="main">
+      <input type="text" id="taskInput" placeholder="Add a new task..." />
+      <button id="addTaskBtn">Add Task</button>
+      <ul id="taskList"></ul>
+      <button id="del">Delete All</button>
+    </main>
 
-    <ul id="taskList"></ul>
-    <button id="del">Delete All</button>
-    <script src="script.js"></script>
-    <footer style="background-color: rgb(59, 105, 255); color: white; padding: 1px; text-align: center;"><p>© 2025 Neriya L. Moses. All rights reserved.</p></footer>
+    <footer class="footer">
+      <p>© 2025 Neriya L. Moses. All rights reserved.</p>
+    </footer>
+  </div>
 
+  <script src="script.js"></script>
 </body>
+
 </html>

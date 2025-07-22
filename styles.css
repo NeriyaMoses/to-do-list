@@ -1,20 +1,64 @@
-header {
-    font-style: verdana, 'Gill Sans', sans-serif;
-    font-size: large;
+/* Layout */
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
 
-button {
-    background-color: rgb(59, 105, 255);
-    color: white;
-    border: 1x;
-    border-color: rgba(59, 105, 255, 0.63);
-    border-radius: 5px;
-    height: 30px;
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
-.done {
-  text-decoration: line-through;
-  color: gray;
+
+.main {
+  flex: 1;
+  padding: 1rem;
 }
+
+/* Header & Footer */
+.header,
+.footer {
+  background-color: rgb(59, 105, 255);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Inputs & Buttons */
+#taskInput {
+  padding: 6px;
+  font-family: cursive;
+  margin: 6px 8px 0 8px;
+}
+
+#addTaskBtn,
+#del {
+  margin-left: 8px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#addTaskBtn {
+  background-color: rgb(59, 105, 255);
+  color: white;
+}
+
+#del {
+  background-color: rgba(202, 0, 0, 0.822);
+  color: white;
+  margin-top: 10px;
+}
+
+/* Task List */
+#taskList {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0;
+}
+
 #taskList li {
   margin-bottom: 10px; /* space between tasks */
   padding: 8px;
@@ -24,6 +68,7 @@ button {
   align-items: center;
   justify-content: space-between;
 }
+
 .check-btn,
 .delete-btn {
   margin-left: 5px;
@@ -32,30 +77,9 @@ button {
   border-radius: 4px;
   cursor: pointer;
 }
-#addTaskBtn {
-  margin-left: 5px;
-  padding: 4px 8px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  text-decoration: solid;
-}
-#taskInput {
-    padding: 3px;
-    font-family: cursive;
-    margin-left: 8px;
-}
-#taskInput, 
-#addTaskBtn {
-    margin-top: 6px;
-}
-#del {
-    background-color: rgba(202, 0, 0, 0.822);
-    color: white;
-    border: 1x;
-    border-color: rgba(202, 0, 0, 0.822);
-    border-radius: 5px;
-    height: 30px;
-    cursor: pointer;
-    margin: 8px 8px;
+
+/* Done State */
+.done {
+  text-decoration: line-through;
+  color: gray;
 }
